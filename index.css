@@ -1,0 +1,16 @@
+.project-info {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.description {
+  flex-wrap: wrap;
+  margin-left: 75px;
+  border-style: dotted;
+}
+
+.videos {
+  width: 600px;
+  height: 400px;
+}
