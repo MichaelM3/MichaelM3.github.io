@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,86,93,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+h1 {
+  text-align: center;
+}
+
 .project-info {
   display: flex;
   align-items: center;
@@ -7,7 +19,8 @@
 .description {
   flex-wrap: wrap;
   margin-left: 75px;
-  border-style: dotted;
+  border-style: solid;
+  border-radius: 25px;
 }
 
 .videos {
