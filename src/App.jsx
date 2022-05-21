@@ -3,6 +3,7 @@ import './App.css'
 import { MoonIcon} from '@heroicons/react/solid'
 import { SunIcon } from '@heroicons/react/outline'
 import DemoContainer from './components/DemoContainer'
+import me from './me.jpg'
 
 function App() {
   const [theme, setTheme] = useState("light")
@@ -49,7 +50,7 @@ function App() {
             specialize in writing back end apis with Ruby on Rails, and front ends with 
             React.js
           </p>
-          <img src='src/me.jpg' alt='Picture of Michael' className='rounded-full w-2/12' /> 
+          <img src={me} alt='Picture of Michael' className='rounded-full w-2/12' /> 
         </header>
         <hr className='w-full border-black dark:border-white my-9'/>
         <DemoContainer />
