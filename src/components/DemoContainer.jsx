@@ -11,7 +11,7 @@ const DemoContainer = () => {
   return (
     <div className='flex flex-col items-center w-full'>
       <h2 className="dark:text-white text-3xl">Projects</h2> 
-      <div className='flex justify-around my-9 w-full'>
+      <div className='flex my-9 w-full overflow-auto space-x-4 overflow-y-hidden'>
         {displayDemos}
       </div>
     </div>
