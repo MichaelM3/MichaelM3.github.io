@@ -13,24 +13,24 @@ import docker from '../WebDevSvgs/docker-svgrepo-com.svg'
 import ts from '../WebDevSvgs/typescript-icon-svgrepo-com.svg'
 import git from '../WebDevSvgs/github-svgrepo-com.svg'
 
-const Tech = () => {
+const tech = [
+  { name: "HTML", icon: html },
+  { name: "CSS", icon: css }, 
+  { name: "Javascript", icon: js },
+  { name: "Typescript", icon: ts },
+  { name: "Node", icon: node },
+  { name: "NPM", icon: npm },
+  { name: "React", icon: react }, 
+  { name: "Redux", icon: redux },
+  { name: "Ruby", icon: ruby },
+  { name: "Rails", icon: rails },
+  { name: "Go", icon: go },
+  { name: "Python", icon: python },
+  { name: "Docker", icon: docker },
+  { name: "Git", icon: git },
+]
 
-  const tech = [
-    { name: "HTML", icon: html },
-    { name: "CSS", icon: css }, 
-    { name: "Javascript", icon: js },
-    { name: "Typescript", icon: ts },
-    { name: "Node", icon: node },
-    { name: "NPM", icon: npm },
-    { name: "React", icon: react }, 
-    { name: "Redux", icon: redux },
-    { name: "Ruby", icon: ruby },
-    { name: "Rails", icon: rails },
-    { name: "Go", icon: go },
-    { name: "Python", icon: python },
-    { name: "Docker", icon: docker },
-    { name: "Git", icon: git },
-  ]
+const Tech = () => {
 
   const displayTech = tech.map((skill, index) => {
     return (
@@ -42,7 +42,7 @@ const Tech = () => {
   })
 
   return (
-    <div className="flex flex-col items-center w-1/3 h-full">
+    <div className="flex flex-col items-center w-1/3 h-full overflow-auto md:overflow-y-auto">
       <h2 className='text-4xl dark:text-white mb-6'>TECH</h2>
       <div className='flex flex-wrap justify-center space-x-3'>
         {displayTech}

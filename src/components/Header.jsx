@@ -1,6 +1,6 @@
 import { FaSun, FaMoon } from 'react-icons/fa'
 import Statement from './Statement'
-import SoftSkills from './SoftSkills'
+import Resume from './Resume'
 import Tech from './Tech'
 
 const Header = ({ theme, setTheme }) => {
@@ -16,7 +16,7 @@ const Header = ({ theme, setTheme }) => {
   }
 
   return (
-    <header className='flex flex-col items-center space-y-6'>
+    <header className='flex flex-col h-2/3 items-center space-y-6'>
       <span className='flex'>
         {theme === "light" ?
           <FaSun onClick={handleClick} size={36} className='absolute right-12 hover:cursor-pointer'/>
@@ -24,8 +24,8 @@ const Header = ({ theme, setTheme }) => {
           <FaMoon onClick={handleClick} size={36} className='absolute right-12 hover:cursor-pointer' />
         }
       </span>
-      <div className='flex flex-row items-center space-x-6'>
-        <SoftSkills />
+      <div className='flex flex-row items-center space-x-6 h-full'>
+        <Resume />
         <Statement />
         <Tech />
       </div>
