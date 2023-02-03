@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import resume from '../resumePic.jpg'
+import resume from '../resumePic.png'
 
 const Resume = () => {
 
